@@ -1,0 +1,5 @@
+CFLAGS=-O
+
+sq:	sq.o tr2.o tr1.o sqdebug.o sqio.o
+	cc $(CFLAGS) -o sq sq.o tr2.o tr1.o sqdebug.o sqio.o
+sq.o tr2.o tr1.o sqdebug.o sqio.o: sq.h sqcom.h
